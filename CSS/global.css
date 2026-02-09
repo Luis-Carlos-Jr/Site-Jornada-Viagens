@@ -90,3 +90,9 @@ section {
     width: 1200px;
   }
 }
+
+/*redução de informação visual*/
+.section_header_main,
+.section_hero{
+  display: none;
+}
