@@ -1,10 +1,10 @@
-.categories_grid{
+.categories_grid {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.categories_card{
+.categories_card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +14,7 @@
   height: 220px;
 }
 
-.categories_grid a{
+.categories_grid a {
   color: var(--text-primary-color);
   text-decoration: none;
   display: flex;
@@ -24,13 +24,20 @@
   text-align: center;
 }
 
-.categories_img_box{
+.categories_img_box {
   text-align: center;
   width: 80px;
   height: 80px;
 }
 
-.categories_card h3{
+.categories_card h3 {
   font-weight: var(--text-title-weight);
   font-size: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .categories_grid{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
