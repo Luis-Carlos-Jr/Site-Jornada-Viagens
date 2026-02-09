@@ -1,4 +1,4 @@
-.offers_grid{
+.offers_grid {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -70,9 +70,28 @@
   background-image: url(../img/bg-card-manaus.jpg);
 }
 
-@media screen and (min-width:768px) {
-  .offers_grid{
+@media screen and (min-width: 768px) {
+  .offers_grid {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .offers_card div {
+    padding: 24px 32px;
+  }
+
+  .offers_card header{
+    gap: 9px;
+  }
+
+  .offers_card h3 {
+    font-size: 48px;
+    width: 524px;
+  }
+
+  .offers_card p {
+    font-size: 40px;
   }
 }
