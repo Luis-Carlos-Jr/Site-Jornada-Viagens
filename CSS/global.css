@@ -51,11 +51,6 @@ body {
   background-color: var(--elements-hover-color);
 }
 
-.display-flex-col {
-  display: flex;
-  flex-direction: column;
-}
-
 .section-title {
   display: flex;
   flex-direction: column;
@@ -63,6 +58,8 @@ body {
   align-items: center;
   gap: 16px;
   margin: 104px auto 64px;
+  font-weight: var(--text-title-weight);
+  font-size: 32px;
 }
 
 .section-title hr {
@@ -93,3 +90,9 @@ section {
     width: 1200px;
   }
 }
+
+/*redução de informação visual*/
+/* .section_header_main,
+.section_hero{
+  display: none;
+} */
