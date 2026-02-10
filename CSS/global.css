@@ -58,6 +58,9 @@ body {
   align-items: center;
   gap: 16px;
   margin: 104px auto 64px;
+}
+
+.section-title h2 {
   font-weight: var(--text-title-weight);
   font-size: 32px;
 }
@@ -92,10 +95,10 @@ section {
 }
 
 /*redução de distração visual*/
-/* .section_header_main,
+.section_header_main,
 .section_hero,
 .section_offers,
 .section_categories,
-.section_destinations{
+.section_destinations {
   display: none;
-} */
+}
