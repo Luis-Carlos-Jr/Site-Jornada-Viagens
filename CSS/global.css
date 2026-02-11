@@ -93,3 +93,13 @@ section {
     width: 1200px;
   }
 }
+
+/*redução de distração visual*/
+.section_header_main,
+.section_hero,
+.section_offers,
+.section_categories,
+.section_destinations,
+.section_payments {
+  display: none;
+}
