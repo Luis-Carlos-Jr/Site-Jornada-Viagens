@@ -10,6 +10,11 @@
   gap: 24px;
 }
 
+.destinations_card a{
+  text-decoration: none;
+  color: var(--text-secondary-color);
+}
+
 .destinations_card div {
   width: 312px;
   height: 360px;
