@@ -24,7 +24,7 @@
   position: relative;
 }
 
-.travel-packages h2 {
+.section-title.hero h2 {
   font-size: 48px;
   padding: 1px 0;
 }
@@ -35,7 +35,7 @@
 
 .travel-packages .hero_header_img::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   inset: 0;
   position: absolute;
 }

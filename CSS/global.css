@@ -57,7 +57,7 @@ body {
   text-align: center;
   align-items: center;
   gap: 16px;
-  margin: 104px auto 64px;
+  margin: 88px auto 32px;
 }
 
 .section-title h2 {
@@ -83,7 +83,7 @@ section {
 }
 
 /*travel-package html*/
-.travel-packages .section-title {
+.travel-packages .section-title.hero {
   margin: 0 0 32px 0;
   align-items: start;
   text-align: start;
