@@ -1,0 +1,74 @@
+.hero_header_img {
+  background-image: url(../img/hero-mobile.jpg);
+  height: clamp(400px, 65vw, 620px);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 88px;
+}
+
+.section_hero_header h1 {
+  padding: 0 clamp(24px, 8.3vw, 160px);
+  font-weight: var(--text-primary-weight);
+  text-align: center;
+  font-size: clamp(20px, 5.5vw, 32px);
+  line-height: max(32px, 1.5em);
+}
+
+/*travel-package html*/
+.travel-packages .hero_header_img {
+  padding: 65px 24px;
+  height: 460px;
+  background-image: url(../img/travel-packages/japan-bg-hero-mobile.jpg);
+  background-position: -327px 0;
+  position: relative;
+}
+
+.section-title.hero h2 {
+  font-size: 48px;
+  padding: 1px 0;
+}
+
+.travel-packages .hero_content {
+  position: relative;
+}
+
+.travel-packages .hero_header_img::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  inset: 0;
+  position: absolute;
+}
+
+.travel-packages h1 {
+  color: var(--text-secondary-color);
+  text-align: start;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero_header_img {
+    background-image: url(../img/hero-tablet.jpg);
+  }
+
+  /*travel-package html*/
+  .travel-packages .hero_header_img {
+    background-image: url(../img/travel-packages/japan-bg-hero-tablet.png);
+    padding: 209px 69px 107px 120px;
+    height: 620px;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero_header_img {
+    background-image: url(../img/hero-desktop.jpg);
+  }
+
+  /*travel-package html*/
+  .travel-packages .hero_header_img {
+    padding: 158px 741px 158px 120px;
+    height: 620px;
+    background-image: url(../img/travel-packages/japan-bg-hero-desktop.png);
+  }
+}
