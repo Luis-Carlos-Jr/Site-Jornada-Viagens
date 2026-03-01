@@ -52,7 +52,25 @@
   grid-column: span 2;
 }
 
+/*travel-packages html*/
+
+.travel-packages .payments_img.small_1 {
+  background-image: url(../img/travel-packages/gallery1-mobile.png);
+}
+
+.travel-packages .payments_img.small_2 {
+  background-image: url(../img/travel-packages/gallery2-mobile.png);
+}
+
+.travel-packages .payments_img.long {
+  background-image: url(../img/travel-packages/gallery3-mobile.png);
+}
+
 @media screen and (min-width: 768px) {
+  .payments_img_1 {
+    background-image: url(../img/gallery1-tablet.png);
+  }
+
   .payments_img_1 {
     background-image: url(../img/gallery1-tablet.png);
   }
@@ -71,9 +89,23 @@
     background-repeat: no-repeat;
     height: 254px;
   }
+
+  /*travel-packeges html*/
+  .travel-packages .payments_img.small_1 {
+    background-image: url(../img/travel-packages/gallery1-tablet.png);
+  }
+
+  .travel-packages .payments_img.small_2 {
+    background-image: url(../img/travel-packages/gallery2-tablet.png);
+  }
+
+  .travel-packages .payments_img.long {
+    background-image: url(../img/travel-packages/gallery3-tablet.png);
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  
   .payments_grid {
     flex-direction: row;
   }
@@ -89,5 +121,19 @@
   .payments_grid header h3 {
     width: 285px;
     text-align: start;
+  }
+
+  /**travel-package html*/
+
+  .travel-packages .payments_img.small_1 {
+    background-image: url(../img/travel-packages/gallery1-desktop.png);
+  }
+
+  .travel-packages .payments_img.small_2 {
+    background-image: url(../img/travel-packages/gallery2-desktop.png);
+  }
+
+  .travel-packages .payments_img.long {
+    background-image: url(../img/travel-packages/gallery3-desktop.png);
   }
 }
