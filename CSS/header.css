@@ -39,6 +39,7 @@
 .travel-packages.section_header_main .activated{
   text-decoration: underline;
   font-weight: var(--text-title-weight);
+  color: var(--elements-primary-color);
 }
 
 @media screen and (min-width: 768px) {
