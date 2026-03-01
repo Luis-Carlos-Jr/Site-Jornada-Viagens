@@ -11,13 +11,14 @@
   display: flex;
 }
 
-.section_header_main input:checked ~ nav {
+.header_main_menu input:checked ~ nav {
   display: block;
   position: absolute;
   left: 0;
   top: 100%;
   background-color: var(--background-secondary-color);
   width: 100%;
+  z-index: 2;
 }
 
 .header_nav ul {
@@ -33,6 +34,11 @@
   color: var(--text-secondary-color);
   font-weight: var(--text-menu-weight);
   font-size: 24px;
+}
+
+.travel-packages.section_header_main .activated{
+  text-decoration: underline;
+  font-weight: var(--text-title-weight);
 }
 
 @media screen and (min-width: 768px) {
