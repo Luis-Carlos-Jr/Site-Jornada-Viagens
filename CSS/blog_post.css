@@ -1,10 +1,29 @@
-.tokyo_arrive{
-  padding:24px 0 24px;
+.tokyo_posts{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 24px;
+}
+
+.tokyo_posts article{
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.tokyo_arrive img {
+.tokyo_arrive img,
+.blog_tokyo_img img{
   width: 100%;
+}
+
+.section_tokyo article h3{
+  font-size: 28px;
+  font-weight: var(--text-title-weight);
+  line-height: 100%;
+}
+
+.section_tokyo article p{
+  font-size: 20px;
+  font-weight: var(--text-primary-weight);
+  line-height: 32px;
 }
