@@ -1,29 +1,65 @@
-.tokyo_posts{
+.tokyo_posts {
   display: flex;
   flex-direction: column;
   gap: 32px;
   padding-top: 24px;
 }
 
-.tokyo_posts article{
+.tokyo_posts article {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tokyo_arrive_post {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
 .tokyo_arrive img,
-.blog_tokyo_img img{
+.tokyo_accommodations img {
   width: 100%;
 }
 
-.section_tokyo article h3{
+.section_tokyo article h3 {
   font-size: 28px;
   font-weight: var(--text-title-weight);
   line-height: 100%;
+  grid-area: titulo;
 }
 
-.section_tokyo article p{
+.section_tokyo article p {
   font-size: 20px;
   font-weight: var(--text-primary-weight);
   line-height: 32px;
+  grid-area: texto;
+}
+
+@media screen and (min-width: 768px) {
+  .tokyo_arrive_post img {
+    grid-area: imagem;
+  }
+
+  .tokyo_arrive_post {
+    display: grid;
+    grid-template-areas:
+      "titulo imagem"
+      "texto imagem";
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .tokyo_arrive_post {
+    display: grid;
+    /* Define que a 1ª linha é automática e a 2ª expande */
+    grid-template-rows: max-content 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "titulo imagem"
+      "texto imagem";
+    gap: 24px;
+  }
 }
