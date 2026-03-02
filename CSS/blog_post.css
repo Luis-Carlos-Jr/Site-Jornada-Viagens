@@ -17,9 +17,22 @@
   gap: 24px;
 }
 
-.tokyo_arrive img,
-.tokyo_accommodations img {
+.tokyo_arrive img {
   width: 100%;
+}
+
+.tokyo_accommodations div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tokyo_img {
+  background-image: url(../img/blog/blog-tokyo-post-accommodations-mobile.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
 }
 
 .section_tokyo article h3 {
@@ -36,7 +49,25 @@
   grid-area: texto;
 }
 
+.blog .destinations_card_3 {
+  background-image: url(../img/blog/blog-hiroshima-post-mobile.png);
+}
+
+.blog .destinations_card_4 {
+  background-image: url(../img/blog/blog-kyoto-post-mobile.png);
+}
+
+.blog .destinations_card_2,
+.blog .destinations_card_3,
+.blog .destinations_card_4 {
+  height: 300px;
+}
+
 @media screen and (min-width: 768px) {
+  .tokyo_img {
+    background-image: url(../img/blog/blog-tokyo-post-accommodations-tablet.png);
+  }
+
   .tokyo_arrive_post img {
     grid-area: imagem;
   }
@@ -49,6 +80,22 @@
     grid-template-columns: 1fr 1fr;
     gap: 24px;
   }
+
+  .blog .destinations_card_2 {
+    background-image: url(../img/blog/blog-osaka-post-tablet.png);
+  }
+
+  .blog .destinations_card_3 {
+    background-image: url(../img/blog/blog-hiroshima-post-tablet.png);
+  }
+
+  .blog .destinations_card_4 {
+    background-image: url(../img/blog/blog-kyoto-post-tablet.png);
+  }
+}
+
+.blog .destinations_grid {
+  margin: 0 0 104px 0;
 }
 
 @media screen and (min-width: 1440px) {
@@ -61,5 +108,21 @@
       "titulo imagem"
       "texto imagem";
     gap: 24px;
+  }
+
+  .blog .destinations_card div {
+    width: 100%;
+  }
+
+  .blog .destinations_card_2 {
+    background-image: url(../img/blog/blog-osaka-post-desktop.png);
+  }
+
+  .blog .destinations_card_3 {
+    background-image: url(../img/blog/blog-hiroshima-post-desktop.png);
+  }
+
+  .blog .destinations_card_4 {
+    background-image: url(../img/blog/blog-kyoto-post-desktop.png);
   }
 }

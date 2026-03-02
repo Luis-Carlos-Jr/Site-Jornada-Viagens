@@ -98,7 +98,11 @@
   }
 
   /*travel-package html*/
-  .travel-packages .hero_header_img,
+  .travel-packages .hero_header_img {
+    padding: 158px 741px 158px 120px;
+    height: 620px;
+  }
+
   .blog .hero_header_img {
     padding: 158px 741px 158px 120px;
     height: 620px;
