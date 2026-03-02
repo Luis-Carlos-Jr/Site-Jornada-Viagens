@@ -1,0 +1,10 @@
+.tokyo_arrive{
+  padding:24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tokyo_arrive img {
+  width: 100%;
+}
