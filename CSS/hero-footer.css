@@ -7,6 +7,10 @@
   margin-top: 88px;
 }
 
+.contact.section_hero_footer div {
+  background-image: url(../img/contact/contact-bg-bottom-hero-mobile.png);
+}
+
 .travel-packages.section_hero_footer div {
   background-image: url(../img/travel-packages/japan-bg-bottom-hero-mobile.png);
   background-position: center;
