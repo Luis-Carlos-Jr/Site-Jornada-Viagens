@@ -15,6 +15,11 @@
   line-height: max(32px, 1.5em);
 }
 
+.section-title.hero h2 {
+  font-size: 48px;
+  padding: 1px 0;
+}
+
 /*travel-package html*/
 .travel-packages .hero_header_img {
   padding: 65px 24px;
@@ -22,28 +27,40 @@
   background-image: url(../img/travel-packages/japan-bg-hero-tablet.png);
   background-position: -179px 0;
   position: relative;
-}
-
-.section-title.hero h2 {
-  font-size: 48px;
-  padding: 1px 0;
+  overflow: none;
 }
 
 .travel-packages .hero_content {
   position: relative;
 }
 
-.travel-packages .hero_header_img::before {
+.travel-packages .hero_header_img::before,
+.blog .hero_header_img::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   inset: 0;
   position: absolute;
 }
 
-.travel-packages h1 {
+.travel-packages h1,
+.blog h1 {
   color: var(--text-secondary-color);
   text-align: start;
   padding: 0;
+}
+
+/*blog html*/
+.blog .hero_header_img {
+  padding: 40px 24px;
+  height: 460px;
+  background-image: url(../img/blog/blog-bg-hero-mobile.jpg);
+  background-position: center;
+  position: relative;
+}
+
+.blog .hero_content {
+  padding: 41px 0;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -58,6 +75,21 @@
     height: 620px;
     background-position: center;
   }
+
+  .blog .hero_header_img {
+    background-image: url(../img/blog/blog-bg-hero-tablet.png);
+    padding: 158px 94px;
+    height: 620px;
+    background-position: center;
+  }
+
+  .blog .hero_content {
+    padding: 0;
+  }
+
+  .blog .hero_header_img::before {
+    background-color: rgba(0, 0, 0, 0);
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -69,6 +101,11 @@
   .travel-packages .hero_header_img {
     padding: 158px 741px 158px 120px;
     height: 620px;
-    background-image: url(../img/travel-packages/japan-bg-hero-desktop.png);
+  }
+
+  .blog .hero_header_img {
+    padding: 158px 741px 158px 120px;
+    height: 620px;
+    background-image: url(../img/blog/blog-bg-hero-desktop.png);
   }
 }
