@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta
       name="description"
       content="Dúvidas, sugestões, problemas para resolver? Temos uma equipe de plantão para ajudar você!"
@@ -15,10 +16,9 @@
     <meta name="og:type" content="website" />
     <meta
       name="og:image"
-      content="https://github.com/Luis-Carlos-Jr/Site-Jornada-Viagens/blob/main/img/contact/contact-bg-hero-mobile.jpg"
+      content="https://github.com/Luis-Carlos-Jr/Site-Jornada-Viagens/blob/main/img/blog/blog-bg-hero-mobile.png"
     />
-    <meta name="og:url" content="https://luis-carlos-jr.github.io/Site-Jornada-Viagens/contact.html" />
-    <meta />
+    <meta name="og:url" content="https://luis-carlos-jr.github.io/Site-Jornada-Viagens/contacts.html" />
 
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="icon" href="favicon.svg" />
@@ -26,10 +26,113 @@
     <title>Contato | Jornada Viagens</title>
   </head>
   <body>
-    <body>
-      <header></header>
-      <main></main>
-      <footer></footer>
-    </body>
+    <header class="contact section_header_main">
+      <a class="header_logo_mobile" href="index.html" title="Visite nossa página principal">
+        <img src="img/bussola-jornada-branco.png" alt="bussola branca, logomarca Jornada Viagens" />
+      </a>
+      <a class="header_logo_tablet" href="index.html" title="Visite nossa página principal" hidden>
+        <img src="img/bussola-texto-jornada-branco.png" alt="bussola branca, logomarca Jornada Viagens" />
+      </a>
+      <div class="header_main_menu">
+        <label for="header_main_check">
+          <img src="img/menu.png" alt="Burguer menu na cor branca" />
+        </label>
+        <input type="checkbox" name="header_main_check" id="header_main_check" hidden />
+        <nav class="header_nav" hidden>
+          <ul>
+            <li>
+              <a href="blog.html" title="Visite o nosso blog">Blog</a>
+            </li>
+            <li>
+              <a href="travel-packages.html" title="Visite o nosso blog">Pacotes de Viagem</a>
+            </li>
+            <li>
+              <a class="activated" href="contacts.html" title="Visite o nosso blog">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="contact section_hero_header section_hero">
+        <div class="hero_header_img">
+          <div class="hero_content">
+            <div class="section-title hero">
+              <h2>Entre em contato!</h2>
+              <hr />
+            </div>
+            <h1>Dúvidas, sugestões, problemas para resolver? Temos uma equipe de plantão para ajudar você!</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section_form">
+        <form action="base.html" method="get">
+          <header>
+            <div class="section-title">
+              <h2>Preencha o formulário:</h2>
+              <hr />
+            </div>
+            <p>
+              Temos uma equipe sempre em prontidão para resolver suas dúvidas, problemas, trazer dicas e
+              orientações objetivas para tornar sua experiência o mais prazerosa e tranquila possível. Preencha
+              seus dados que vamos retornar seu contato conforme a urgência do seu chamado. Pode confiar!
+            </p>
+          </header>
+          <div class="form_grid">
+            <div class="field">
+              <label for="contact_name">Seu nome</label>
+              <input type="text" name="contact_name" id="contact_name" />
+            </div>
+            <div class="field">
+              <label for="contact_tel">Telefone</label>
+              <input type="tel" name="contact_tel" id="contact_tel" />
+            </div>
+            <div class="field">
+              <label for="contact_email">Email</label>
+              <input type="email" name="contact_email" id="contact_email" />
+            </div>
+            <div class="field">
+              <label for="contact_subject">Assunto</label>
+              <input type="text" name="contact_subject" id="contact_subject" />
+            </div>
+            <div class="field">
+              <p>Descrição</p>
+              <textarea name="contact_post" id="contact_post"></textarea>
+            </div>
+            <button class="button-default" type="submit">Enviar</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="contact section_hero_footer section_hero">
+        <div></div>
+      </section>
+    </main>
+    <footer class="section_footer">
+      <div class="footer_info">
+        <a href="index.html">
+          <img src="img/logo-footer.png" alt="Jornada Viagens" title="Jornada Viagens - Página principal" />
+        </a>
+        <p>Horário de atendimento: 08h - 20h (Segunda a Sábado)</p>
+        <p>Projeto fictício sem fins comerciais.</p>
+      </div>
+      <nav class="footer_social">
+        <p>Acesse nossas redes:</p>
+        <div class="footer_social_icons">
+          <a href="whatsapp.html" title="Contato - whatsapp">
+            <img src="img/icone-whatsapp.svg" alt="Fale conosco pelo Whatsapp" />
+          </a>
+
+          <a href="instagram.html" title="Contato - Instagram">
+            <img src="img/icone-instagram.svg" alt="Siga-nos no Instagram" />
+          </a>
+
+          <a href="twitter.html" title="Siga-nos - whatsapp">
+            <img src="img/icone-twitter.svg" alt="Siga-nos no Twitter" />
+          </a>
+        </div>
+      </nav>
+    </footer>
   </body>
 </html>

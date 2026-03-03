@@ -37,7 +37,8 @@
 }
 
 .travel-packages.section_header_main .activated,
-.blog.section_header_main .activated{
+.blog.section_header_main .activated,
+.contact.section_header_main .activated{
   text-decoration: underline;
   font-weight: var(--text-title-weight);
   color: var(--elements-primary-color);

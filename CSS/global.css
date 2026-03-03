@@ -18,6 +18,7 @@
   /*botões e outros elementos*/
   --elements-primary-color: #b81515;
   --elements-hover-color: #8f0101;
+  --elements-form-line-color: #D9D9D9;
 
   /*peso das fontes*/
   --text-primary-weight: 400;
@@ -84,7 +85,8 @@ section {
 
 /*travel-package html*/
 .travel-packages .section-title.hero,
-.blog .section-title.hero {
+.blog .section-title.hero,
+.contact .section-title.hero {
   margin: 0 0 32px 0;
   align-items: start;
   text-align: start;

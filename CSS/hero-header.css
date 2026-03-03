@@ -7,6 +7,12 @@
   margin-bottom: 88px;
 }
 
+.blog .hero_header_img,
+.travel-packages .hero_header_img,
+.contact .hero_header_img{
+  margin-bottom: 0;
+}
+
 .section_hero_header h1 {
   padding: 0 clamp(24px, 8.3vw, 160px);
   font-weight: var(--text-primary-weight);
@@ -35,7 +41,8 @@
 }
 
 .travel-packages .hero_header_img::before,
-.blog .hero_header_img::before {
+.blog .hero_header_img::before,
+.contact .hero_header_img::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.3);
   inset: 0;
@@ -43,7 +50,8 @@
 }
 
 .travel-packages h1,
-.blog h1 {
+.blog h1,
+.contact h1 {
   color: var(--text-secondary-color);
   text-align: start;
   padding: 0;
@@ -51,15 +59,28 @@
 
 /*blog html*/
 .blog .hero_header_img {
-  padding: 40px 24px;
+  padding: 41px 0;
   height: 460px;
   background-image: url(../img/blog/blog-bg-hero-mobile.jpg);
   background-position: center;
   position: relative;
 }
 
+.contact .hero_header_img {
+  padding: 49px 0;
+  height: 460px;
+  background-image: url(../img/contact/contact-bg-hero-mobile.jpg);
+  background-position: -116px 0;
+  position: relative;
+}
+
 .blog .hero_content {
-  padding: 41px 0;
+  padding: 40px 24px;
+  position: relative;
+}
+
+.contact .hero_content {
+  padding: 32px 24px;
   position: relative;
 }
 
@@ -83,7 +104,15 @@
     background-position: center;
   }
 
-  .blog .hero_content {
+  .contact .hero_header_img {
+    background-image: url(../img/contact/contact-bg-hero-tablet.png);
+    padding: 183px 95px;
+    height: 620px;
+    background-position: center;
+  }
+
+  .blog .hero_content,
+  .contact .hero_content {
     padding: 0;
   }
 
@@ -107,5 +136,11 @@
     padding: 158px 741px 158px 120px;
     height: 620px;
     background-image: url(../img/blog/blog-bg-hero-desktop.png);
+  }
+
+  .contact .hero_header_img {
+    padding: 209px 741px 155px 120px;
+    height: 620px;
+    background-image: url(../img/contact/contact-bg-hero-desktop.png);
   }
 }

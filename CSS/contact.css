@@ -1,0 +1,40 @@
+.section_form form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section_form header p{
+  text-align: justify;
+}
+
+.field{
+  margin: 32px 0;
+}
+
+.form_grid input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--background-hover-color);
+}
+
+.form_grid textarea {
+  height: 100px;
+  width: 100%;
+  outline: none;
+  border: 2px solid var(--background-hover-color);
+}
+
+.form_grid input:focus {
+  border-bottom: 2px solid var(--elements-hover-color);
+}
+
+.form_grid textarea:focus {
+  border: 2px solid var(--elements-hover-color);
+}
+
+.contact .button-default{
+  width: 100%;
+  border: none;
+}
