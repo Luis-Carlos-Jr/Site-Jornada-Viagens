@@ -20,6 +20,10 @@
   margin-top: 88px;
 }
 
+.footer_social a{
+  text-decoration: none;
+}
+
 @media screen and (min-width: 768px) {
   .section_hero_footer div {
     background-image: url(../img/bg-bottom-hero-tablet.png);
