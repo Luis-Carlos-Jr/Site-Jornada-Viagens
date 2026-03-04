@@ -28,6 +28,11 @@
   .travel-packages.section_hero_footer div {
     background-image: url(../img/travel-packages/japan-bg-bottom-hero-tablet.png);
   }
+
+  .contact.section_hero_footer div {
+    background-image: url(../img/contact/contact-bg-bottom-hero-tablet.png);
+    height: 600px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -39,5 +44,9 @@
   .travel-packages.section_hero_footer div {
     background-image: url(../img/travel-packages/japan-bg-bottom-hero-desktop.png);
     height: 600px;
+  }
+
+  .contact.section_hero_footer div {
+    background-image: url(../img/contact/contact-bg-bottom-hero-desktop.png);
   }
 }

@@ -4,11 +4,17 @@
   gap: 24px;
 }
 
-.section_form header p{
+.section_form header p {
   text-align: justify;
 }
 
-.field{
+.contact form p {
+  font-size: 16px;
+  font-weight: var(--text-primary-weight);
+  line-height: 28px;
+}
+
+.field {
   margin: 32px 0;
 }
 
@@ -34,7 +40,26 @@
   border: 2px solid var(--elements-hover-color);
 }
 
-.contact .button-default{
+.contact .button-default {
   width: 100%;
   border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact .button-default {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .contact form p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact .form_grid {
+    width: 100%;
+  }
 }
