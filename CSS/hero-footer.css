@@ -20,6 +20,10 @@
   margin-top: 88px;
 }
 
+.footer_social a{
+  text-decoration: none;
+}
+
 @media screen and (min-width: 768px) {
   .section_hero_footer div {
     background-image: url(../img/bg-bottom-hero-tablet.png);
@@ -27,6 +31,11 @@
 
   .travel-packages.section_hero_footer div {
     background-image: url(../img/travel-packages/japan-bg-bottom-hero-tablet.png);
+  }
+
+  .contact.section_hero_footer div {
+    background-image: url(../img/contact/contact-bg-bottom-hero-tablet.png);
+    height: 600px;
   }
 }
 
@@ -39,5 +48,9 @@
   .travel-packages.section_hero_footer div {
     background-image: url(../img/travel-packages/japan-bg-bottom-hero-desktop.png);
     height: 600px;
+  }
+
+  .contact.section_hero_footer div {
+    background-image: url(../img/contact/contact-bg-bottom-hero-desktop.png);
   }
 }
